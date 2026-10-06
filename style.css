@@ -1,0 +1,179 @@
+html{
+    scroll-behavior: smooth;
+}
+body{font-family: Arial, Helvetica, sans-serif;
+background-color: #f4f4f4;
+padding: 40px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: flex-start;
+min-height: 100vh;
+}
+.hero-title{
+    margin-bottom: 20px;
+}
+button, .hero-buttons a{
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+button:hover, .hero-buttons a:hover{
+    background-color: #1d4ed8;
+}
+
+.hero img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+    margin-bottom: 20px;
+    border: 4px solid #2563eb;
+}
+.hero-text h1{
+    color: #222;
+    font-size: 3 rem;
+    margin-bottom: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+.links{
+    display: flex;
+    gap: 30px;
+}
+.links a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.links a:hover{
+    color: #2563eb;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.hero-text{
+    text-align: left;
+    max-width: 500px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+}
+.hero-text h2{
+    font-size: 1.5rem;
+    color: rgb(67, 66, 65);
+    margin-bottom: 10px;
+
+}
+.hero-buttons{
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+}
+.projects{
+    margin-top: 80px;
+}
+.project-card{
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.project-card:hover{
+    transform: translateY(-5px);
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.project-card a{
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+.project-card a:hover{
+    text-decoration: underline;
+}
+.projects h2{
+    margin-bottom: 30px;
+}
+.project-card h3{
+    margin-bottom: 10px;
+}
+.project-card p{
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.about{
+    max-width: 700px;
+    text-align: center;
+    margin-top: 80px;
+}
+.about h2{
+    font-size: 32px;
+    padding: 40px;
+    margin-bottom: 15px;
+}
+.about p{
+    color: #666;
+    line-height: 1.6;
+}
+.contact{
+    text-align: center;
+    margin-top: 80px;
+}
+.contact a{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+main>section{
+    width: 100%;
+    max-width: 1000px;
+}
+@media(max-width: 768px){
+     .hero{
+        flex-direction: column;
+    }
+    .project-grid{
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.hero-title.highlight{
+    color: red;
+}
